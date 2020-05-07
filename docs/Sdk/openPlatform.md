@@ -606,7 +606,7 @@ $wechat->officialAccount()->server()->onEvent()->set(RequestConst::DEFAULT_ON_EV
     // 获取CustomerService实例
     $customerService = new CustomerService();
     // 设置客服账户，自定义名称@您的公众号的微信号
-    $customerService->setKfAccount('chunze5@beijingchunze');
+    $customerService->setKfAccount('Easy4@Swoole');
     // 设置昵称
     $customerService->setNickname('客服服务号004');
     // 使用service获取实例，调用addServiceAccount发送设置消息,成功返回bool值true
@@ -624,7 +624,7 @@ $wechat->officialAccount()->server()->onEvent()->set(RequestConst::DEFAULT_ON_EV
     // 获取CustomerService实例
     $customerService = new CustomerService();
     // 设置客服账户，自定义名称@您的公众号的微信号
-    $customerService->setKfAccount('chunze5@beijingchunze');
+    $customerService->setKfAccount('Easy5@Swoole');
     // 设置昵称
     $customerService->setNickname('客服服务号05');
     // 使用service获取实例，调用update传入CustomerService实例
@@ -657,7 +657,7 @@ $wechat->officialAccount()->server()->onEvent()->set(RequestConst::DEFAULT_ON_EV
     // 设置文件路径
     $postFile->setPath($path);
     // 使用service获取实例，调用setAvatar传入客服账号和PostFile实例
-    $weChat->officialAccount()->service()->setAvatar('chunze3@beijingchunze', $postFile);
+    $weChat->officialAccount()->service()->setAvatar('Easy3@Swoole', $postFile);
 ```
 
 
@@ -1497,7 +1497,7 @@ $weChat->officialAccount()->groupSending()->setSendingSpeed(3);
 
 在确保微信公众帐号拥有订阅消息授权的权限的前提下（已认证的公众号即有权限，可登录公众平台在接口权限列表处查看），引导用户在微信客户端打开如下链接：
 
->   https://mp.weixin.qq.com/mp/subscribemsg?action=get_confirm&appid=wxaba38c7f163da69b&scene=1000&template_id=1uDxHNXwYQfBmXOfPJcjAS3FynHArD8aWMEFNRGSbCc&redirect_url=http%3a%2f%2fsupport.qq.com&reserved=test#wechat_redirect
+>   https://mp.weixin.qq.com/mp/subscribemsg?action=get_confirm&appid=wxaba38c7f163.....&scene=1000&template_id=1uDxHNXwYQfBmXOfPJcjAS3FynHArD8aWMEFNRGSbCc&redirect_url=http%3a%2f%2fsupport.qq.com&reserved=test#wechat_redirect
 
 **参数说明**
 
@@ -1544,9 +1544,9 @@ $weChat->officialAccount()->groupSending()->setSendingSpeed(3);
 		// 设定订阅消息模板ID，登录公众平台后台，在接口权限列表处可查看订阅模板ID
     $template->setTemplateId('eMuG4etIdo5amBf3bcWBT...');
 		// 设定点击消息跳转的链接，需要有ICP备案
-    $template->setUrl('http://w.cqchunze.com/');
+    $template->setUrl('http://wechat.easyswoole.com/');
 		// 设定跳转到的小程序appid（appid必须与公众号是绑定关系，并且小程序要求是已发布的）
-    $template->setAppid('wx9c041483abd8a693');
+    $template->setAppid('wx9c041....');
 		// 设定跳转到小程序的具体页面路径，支持带参数,（示例index?foo=bar）
     $template->setPagepath('pages/info/info?id=88');
 		// 设定订阅场景值，该值必须与第一步的scene值相同不然会发送失败
@@ -1587,7 +1587,7 @@ $weChat->officialAccount()->groupSending()->setSendingSpeed(3);
     // 创建微信授权跳转连接
     $jsAuthRequest = new JsAuthRequest();
     // 设置授权后回调地址
-    $jsAuthRequest->setRedirectUri('http://m.evalor.cn');
+    $jsAuthRequest->setRedirectUri('http://m.easyswoole.cn');
     // 设置 state
     $jsAuthRequest->setState('test');
     // 设置授权类型
